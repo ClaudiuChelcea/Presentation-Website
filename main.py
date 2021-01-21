@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 
-# The webpages are http://127.0.0.1:5000/Home and http://127.0.0.1:5000/Contact
+# The webpages are:
+# Home: http://127.0.0.1:5000/Home
+# Contact: http://127.0.0.1:5000/Contact
 
 app = Flask(__name__)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
