@@ -19,6 +19,7 @@ if app.config['MAIL_USERNAME'] == default_email:
     print("Watch out! For the contact page to submit an email to me correctly, you have to insert \
 in the code, as mentioned in the README, a valid email address!");
     print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ATTENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+    print("Website: http://127.0.0.1:5000/Home\n")
 
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
