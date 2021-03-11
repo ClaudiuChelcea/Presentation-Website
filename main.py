@@ -14,6 +14,12 @@ default_password = "dummy_gmail_password"
 app.config['MAIL_USERNAME'] = default_email
 app.config['MAIL_PASSWORD'] = default_password
 
+if app.config['MAIL_USERNAME'] == default_email:
+    print("\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ATTENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    print("Watch out! For the contact page to submit an email to me correctly, you have to insert \
+in the code, as mentioned in the README, a valid email address!");
+    print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ATTENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
+
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
@@ -24,29 +30,28 @@ def home():
     meta = {"title": "Home"}
     meta.update({"icon": "https://static.thenounproject.com/png/2048828-200.png"})
     contact_data = {"name": "Chelcea Claudiu", "post": "Computer Science & Engineering Student",
-                    "gmail": "chelceaclaudiumarian@gmail.com", "number": "(+40) 763 665 892",
-                    "description": "Results-oriented Computer Science & Engineering student and Research and \
-                     Development \
-                specialist at Business Organization for Students, aiming to improve and leverage my skills to \
-                 successfully fill a Software Engineer Intern position. Frequently praised as innovative and \
-                  hard-working by my peers, I can be relied upon to bring a real contribution to the development of the\
-                   company."}
+                    "gmail": "claudiuchelcea01@gmail.com", "number": "(+40) 763 665 892",
+                    "description": "Results-oriented Computer Science & Engineering Student, willing to \
+pursue my gaming passion in the game development industry and to\n \
+improve and leverage my skills to successfully fill a game programmer \
+position. Frequently praised as innovative and hard-working by my\n \
+peers, I can be relied upon to bring a real contribution to the \
+development of any project."}
     projects = {"name": "Projects", "title1": "PHOTO EDITOR",
                 "desc1": "-I created a photo editing program in C that performs a set of operations on an image \
                 formatted as PPM or PGM.",
                 "desc111":
                     "-The user can give as input a series of commands that can be executed \
                     on the image: apply filters, rotate, crop, select and work with only\
-                    parts of the image.", "title2": "PROJECT PRESENTATION WEBSITE",
-                "desc2": "-I built a presentation website for the logical design course final project from the faculty,\
-                 implementing the server side using Python and Flask and the site pages using HTML & CSS and \
-                 Bootstrap.",
-                "desc222": "-The website also features a contact form that sends an email with the completed input.",
+                    parts of the image.", "title2": "CUBE DODGE GAME",
+                "desc2": "-I built the “Cube Dodge” game in Python3, a game in which the player \
+has to dodge falling cubes from the sky while collecting points.",
+                "desc222": "",
                 "title3": "GRIDDLERS CHECKER",
                 "desc3": "I created an algorithm in C language that checks if the solution submitted by the user \
                 for the griddlers puzzle is correct, analyzing with gdb and valgrind any possible memory leaks."}
-    skills = {"title": "Skills", "pl": "Programming languages", "a": "C", "b": "C++", "c": "HTML & CSS",
-              "tech": "Technologies / tools", "tech1": "Linux", "tech2": "Ubuntu", "tech3": "Microsoft Office",
+    skills = {"title": "Skills", "pl": "Programming languages", "a": "C(medium)", "b": "C++(medium)", "c": "HTML(medium)",
+              "tech": "Technologies / Tools", "tech1": "Linux", "tech2": "Ubuntu", "tech3": "Microsoft Office",
               "lang": "Languages", "lang1": "Romanian (native)", "lang2": "English"}
     extra = {"1": "Extracurricular Activities", "2": "National Strategy for Community Action", "3": "2016 – 2017",
              "4": "My responsabilities:", "5": "-Collecting books and school supplies for children",
@@ -57,7 +62,9 @@ def home():
      to operate in a self-sustainable manner.", "13": "Dambovita rural tourism association",
              "14": "Nov 2018 – Feb 2019"}
     extra2 = {"1": "Business Organization for Students", "2": " Research and Development Specialist",
-              "3": "Nov 2020 - current ", "4": "Responsibilities: ", "5": "-Conduct research and find new opportunities\
+              "3": "Nov 2020 - current ", "4": "Responsibilities: ", "5": "B.O.S. is a business oriented student organization,\
+               in which i'm part of the Research and Development Department, with tasks that include conducting research to find \
+               new opportunities \nfor the organization, developing internal and external projects and creating forms.\
                for expanding \
 the visibility of the organization. ", "6": " -Improve communication and collaboration between all \
 departments.", "7": " -Find innovative ideas for new projects and develop the ongoing ones. ", "8": "", "9": " "}
