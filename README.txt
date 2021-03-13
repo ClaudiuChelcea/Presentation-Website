@@ -1,6 +1,6 @@
 # Chelcea Claudiu Marian
 
-This is a CV presentation website developed for the Introduction in Informatics Course.
+This is a simple CV presentation website developed in HTML & Python.
 
 The server side was implemented using Python and Flask and the webpages were build with
 HTML & CSS and bootstrap.
