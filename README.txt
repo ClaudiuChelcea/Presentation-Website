@@ -2,10 +2,10 @@
 
 This is a simple CV presentation website developed in HTML & Python.
 
-The server side was implemented using Python and Flask and the webpages were build with
+The server side was implemented using Python's framework Flask and the webpages were build with
 HTML & CSS and bootstrap.
 
-The website also features an functioning contact form that will send me an email with
+The website also features a functioning contact form that will send me an email with
 the given input from the form.
 
 For privacy reasons, the login information from the code, file: main.py, lines 15-16
