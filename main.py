@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 
 # The webpages are:
-# Home: http://127.0.0.1:5000/Home
+# Home: http://127.0.0.1:5000/Index
 # Contact: http://127.0.0.1:5000/Contact
 
 app = Flask(__name__)
@@ -19,14 +19,14 @@ if app.config['MAIL_USERNAME'] == default_email:
     print("Watch out! For the contact page to submit an email to me correctly, you have to insert \
 in the code, as mentioned in the README, a valid email address!");
     print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ATTENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
-    print("Website: http://127.0.0.1:5000/Home\n")
+    print("Website: http://127.0.0.1:5000/Index\n")
 
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
 
-@app.route('/Home')
+@app.route('/Index')
 def home():
     meta = {"title": "Home"}
     meta.update({"icon": "https://static.thenounproject.com/png/2048828-200.png"})
@@ -75,7 +75,7 @@ Control And Computer Science",
             methods, Logical Design, Usage of Operating Systems",
            "5": " 2020-2024", "6": "National College Ienachita Vacarescu ", "7": " Mathematics And \
 Computer Science", "8": " 2016-2020", "9": " "}
-    return render_template("Home.html", title=meta, contact=contact_data, projects=projects, skills=skills,
+    return render_template("Index.html", title=meta, contact=contact_data, projects=projects, skills=skills,
                            extra=extra, extra2=extra2, edu=edu)
 
 
