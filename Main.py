@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 
 # The webpages are:
-# Home: http://127.0.0.1:5000/Index
+# Home: http://127.0.0.1:5000/index
 # Contact: http://127.0.0.1:5000/Contact
 
 # Configure email
@@ -22,7 +22,7 @@ if app.config['MAIL_USERNAME'] == default_email:
     print("Watch out! For the contact page to submit an email to me correctly, you have to insert \
 in the code, as mentioned in the README, a valid email address!");
     print("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ATTENTION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n")
-    print("Website: http://127.0.0.1:5000/Index\n")
+    print("Website: http://127.0.0.1:5000/index\n")
 
 # Mail setup
 app.config['MAIL_USE_TLS'] = False
@@ -30,13 +30,13 @@ app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
 # Index page
-@app.route('/Index')
+@app.route('/index')
 def home():
     meta = {"title": "Home"}
     meta.update({"icon": "https://static.thenounproject.com/png/2048828-200.png"})
     contact_data = {"name": "Chelcea Claudiu", "status": "Computer Science & Engineering Student",
                     "gmail": "claudiuchelcea01@gmail.com", "number": "(+40) 763 665 892"}
-    return render_template("Index.html", title=meta, contact=contact_data)
+    return render_template("index.html", title=meta, contact=contact_data)
 
 # Contact page
 @app.route('/Contact', methods=['GET', 'POST'])
