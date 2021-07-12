@@ -1,0 +1,165 @@
+{% extends 'Base.html' %} {% block content %}
+
+<head>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/Customization.css') }}">
+</head>
+
+<body>
+    <div id="doc2" class="stylet7">
+        <div id="inner">
+            <div style="border:3px solid black; padding-left: 15pt; padding-right: 15pt;">
+                <div id="hd">
+                    <div class="stylegc">
+                        <div>
+                            <h1>{{ contact["name"] }}</h1>
+                            <h2 style="background-color: #3399ff; color: white; padding-left: 5pt;">{{ contact["status"] }}</h2>
+                        </div>
+                        <div class="styleu">
+                            <div class="contact-info" style="margin-bottom: 0pt;padding-bottom: 0pt;">
+                                <h3>
+                                    <a href="mailto:{{ contact['gmail'] }}">{{ contact["gmail"] }}</a>
+                                </h3>
+                                <h3>{{ contact["number"] }}</h3>
+                                <center>
+                                    <br>
+                                    <a href="https://www.linkedin.com/in/claudiuchelcea011/" target="_parent">
+                                        <img src="https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-squircle.png" width="50" height="50">
+                                    </a>
+                                    <a href="https://www.facebook.com/chelcea.claudiu1" target="_parent">
+                                        <img src="https://i.pinimg.com/originals/57/98/53/5798533bb3f2a08ee3514f9c6f6e03be.png" width="80" height="80">
+                                    </a>
+                                    <a href="https://github.com/ClaudiuChelcea" target="_parent">
+                                        <img src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-png-transparent.png" width="50" height="50">
+                                    </a>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bd" style="padding-top: 0pt !important; margin-top: 0pt !important">
+                    <div id="stylemain">
+                        <div class="styleb">
+                            <div class="stylegf">
+                                <div class="styleu">
+                                    <h2 style="margin-right:125pt !important; margin-top: -30pt;">CAREER OBJECTIVE</h2>
+                                    <br>
+                                    <p style="margin-bottom: 0pt;padding-bottom: 0pt;">
+                                        <h4 style="margin-right: 120pt !important">Results-oriented Computer Science & Engineering Student, willing to pursue my gaming passion in the <b>game development industry</b> and to improve and leverage my skills to successfully fill a game programmer position.
+                                        Frequently praised as innovative and hard-working by my peers, I can be relied upon to bring a real contribution to the development of any project. </p>
+                                        </h4>
+                                </div>
+                            </div>
+                            <div class="stylegf last">
+                                <div>
+                                    <h2 style="margin-top: -30pt;">Education</h2>
+                                </div>
+                                <div>
+                                    <h3>Faculty of Automatic Control and Computer Science, University Politehnica of Bucharest</h3>
+                                    <p style="padding-bottom: 5pt; margin-bottom:5pt;">Relevant Coursework:</p>
+                                    <ul>
+                                        <li>Introduction to Operating Systems</li>
+                                        <li>
+                                            <b>Data structures</b>
+                                        </li>
+                                        <li>Numerical methods</li>
+                                        <li>
+                                            <b>Computer programming</b>
+                                        </li>
+                                        <li>Introduction in Informatics</li>
+                                        <li>Informatics tools</li>
+                                    </ul>
+                                </div>
+                                <div class="stylegf">
+                                    <div class="styleu">
+                                        <h2 style="margin-right: 125pt !important; margin-top: 20pt !important">Projects</h2>
+                                    </div>
+                                    <div class="styleu">
+                                        <div class="talent">
+                                            <h3>PHOTO EDITOR -- C</h3>
+                                            <p>Created a CLI photo editing program in <b>C</b> that performs a set of operations on an image formatted as PPM or PGM. </p>
+                                            <p>The user can give as input a series of commands that can be executed on the image: apply filters, rotate, crop, select, etc. </p>
+                                        </div>
+                                        <div class="talent">
+                                            <h3>MULTIPLE MINI-PROJECTS -- C#</h3>
+                                            <p>Implemented many mini-project apps in <b>C#</b> including Paint, Calculator, Email Simulator, MP4 player, forms and games like Bird Shooter or Car Racing. </p>
+                                        </div>
+                                        <div class="talent">
+                                            <h3 style="margin-right: 112pt !important">CUBE DODGE -- PYTHON</h3>
+                                            <p>Replicated the cube dodge game in the <b>python</b>, using the pygame library, in which a player has to dodge falling cubes from the sky while collecting coins. </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="stylegf">
+                                    <div class="styleu first">
+                                        <br>
+                                        <h2 style="margin-right:-1055pt !important; background-color: #89CFF0;">Skills</h2>
+                                    </div>
+                                    <div class="normal-text">
+                                        <ul style="margin-top: 16pt;">
+                                            <li>
+                                                <b>Programming languages</b>: C/C++ (medium), C#(medium), HTML & CSS (beginner), Python (beginner)
+                                            </li>
+                                            <li>Technologies / tools: Linux, Ubuntu, Git, Bash, Microsoft Office, Unity, Unreal Engine</li>
+                                            <li>Languages: Romanian (native), English</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <br>
+                                        <div>
+                                            <h2 style="margin-right: -5pt !important;">Extracurricular Activities</h2>
+                                        </div>
+                                        <div class="styleu">
+                                            <h3>President at Business Organization for Students</h3>
+                                            <h4>July 2021 - July 2022</h4>
+                                            <p>My role is to represent the organization in the external activities and to <b>lead, manage and bring growth</b> to the organization in the internal activities. </p>
+                                            <br>
+                                            <h3>Dalia's Book programming mentor</h3>
+                                            <h4>Feb. 2021 - Apr. 2021</h4>
+                                            <p>Teach courses about the Scratch game development platform, hold Q&A sessions with middle school children about programming and help organizing a hackathon.</p>
+                                            <br>
+                                            <h3>The League of Students from the Faculty of Automatic Control and Computer Science volunteer</h3>
+                                            <h4>Nov. 2020 – present</h4>
+                                            <p>Developed my communication and collaboration skills while volunteering in many projects like <b>Innovation Labs, LanParty, Hackatons</b> and many others. </p>
+                                            <br>
+                                            <h3>Business Organization for Students, Research and Development Specialist</h3>
+                                            <h4>Nov. 2020 - July 2021</h4>
+                                            <p>Conducted research to find companies to join us as partners in our projects, delivered 3 surveys with more than 100 entries each and helped 5 members of the organization find an internship.</p>
+                                            <br>
+                                            <div>
+                                                <h2>Awards</h2>
+                                                <ul>
+                                                    <li style="padding-right:125pt;">Silver medal at The <b>National Olympiad of Information Technology</b> 2019 </li>
+                                                    <li style="padding-right:125pt;">Second place at the Information Technology Olympiad, county stage 2019 </li>
+                                                    <li style="padding-right:125pt;">Second place at the Information Technology Olympiad, county stage 2018 </li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h2>Certifications</h2>
+                                                <ul style="margin-bottom: -20 pt !important; padding-bottom: -100pt !important;">
+                                                    <li style="padding-right:125pt;">European Computer Driving Licence (ECDL)</li>
+                                                    <li style="padding-right:125pt;">Digital competence certificate</li>
+                                                    <li style="padding-right:125pt;">Certificate of professional competence</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ft">
+            <hr>
+            <p>{{ contact["name"] }} &mdash; <a href="mailto:{{ contact['gmail'] }}" style="color:white;">{{ contact['gmail']
+        }}</a> &mdash; {{ contact["number"] }}
+            </p>
+        </div>
+    </div>
+</body> {% endblock %}
