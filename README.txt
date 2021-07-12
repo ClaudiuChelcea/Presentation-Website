@@ -1,6 +1,6 @@
 # Chelcea Claudiu Marian
 
-This is a simple CV presentation website developed in HTML & Python.
+This is a simple CV presentation website developed in HTML & CSS & Python.
 
 The server side was implemented using Python's framework Flask and the webpages were build with
 HTML & CSS and bootstrap.
